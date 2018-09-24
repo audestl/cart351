@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+body{
+  background-color:#302a42;
+}
+
+.column {
+    flex:auto;
+    float: left;
+    width: 50%;
+    height: 150px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    border:0;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.column_test {
+    flex:auto;
+    float: left;
+    width: 25%;
+    height: 150px;
+    margin: 0 0 10px 0;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .col {
+      float: left;
+        flex:auto;
+      width: 33.33%;
+      height: 150px;
+      padding: 0;
+      border:0;
+       margin: 0 0 10px 0;
+       font-family: 'Abril Fatface', cursive;
+  }
+
+  .col_test {
+      float: left;
+        flex:auto;
+      width: 16.66%;
+      height: 150px;
+      padding: 0;
+      border:0;
+       margin: 0 0 10px 0;
+       font-family: 'Abril Fatface', cursive;
+  }
+
+
+    .col_test2 {
+        float: left;
+          flex:auto;
+        width: 23.33%;
+        height: 150px;
+        padding: 0;
+        border:0;
+         margin: 0 0 10px 0;
+         font-family: 'Abril Fatface', cursive;
+    }
+
+
+      .col_test3 {
+          float: left;
+            flex:auto;
+          width: 10%;
+          height: 150px;
+          padding: 0;
+          border:0;
+           margin: 0 0 10px 0;
+           font-family: 'Abril Fatface', cursive;
+      }
+
+
+
+  a{
+    text-decoration: none;
+     color:#302a42;
+  }
+
+  #live_A2{
+    margin-left:-20px;
+    padding-top: 5%;
+    font-size: 2.5vw;
+
+  }
+  #github_A2{
+    margin-left:-20px;
+    font-size: 2.5vw;
+  }
+  #live_A3{
+    margin-left:-20px;
+    padding-top: 5%;
+    font-size: 2.5vw;
+  }
+
+  #github_A3{
+    margin-left:-20px;
+    font-size: 2.5vw;
+
+
+  }
+
+  #demo{
+    margin-left:-50px;
+    font-size: 3vw;
+    margin-top: 20px;
+    color: #302a42;
+  }
+
+  #slides{
+    margin-left:-50px;
+    font-size: 3vw;
+    margin-top: 20px;
+  }
+
+  .inner_row{
+  margin-left: 30px;
+  margin-top: 10px;
+    font-size: 3vw;
+  }
+  .inner_row2{
+  margin-left: -70px;
+  margin-top: 10px;
+    font-size: 2vw;
+  }
+.row:after {
+
+    display: block;
+    flex:auto;
+  }
+
+
+
+#cart{
+ font-family: 'Abril Fatface', cursive;
+ color:#f2d400;
+ text-align: left;
+ font-size: 42px;
+ padding-top: 0.4em;
+ padding-right: 0;
+ padding-bottom: 0;
+ padding-left: 0.3em;
+ margin: 0;
+ border: 0;
+}
+#name{
+ font-family: 'Abril Fatface', cursive;
+ text-align: left;
+ font-size: 1.1em;
+ padding:0 0 2em 0.8em ;
+ margin: 0;
+ border: 0;
+ color:#ff8190;
+ text-align: left;
+
+}
+
+
+#a2{
+  font-size: 8.6vw;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color:#302a42;
+  display: inline-block;
+  position:relative;
+}
+
+#a3{
+color:#ff8190;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+font-size: 9.8vw;
+padding-left: 40px;
+position:relative;
+}
+
+
+
+#proposal{
+  color:#f2d400;
+  font-size: 5vw;
+  position:relative;
+}
+#prototype {
+  unicode-bidi:bidi-override;
+  direction:rtl;
+  font-size:4.2vw;
+  color:#302a42;
+  padding-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+}
+
+#final{
+
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  display: block;
+  font-size: 9vw;
+  color:#f2d400;
+  margin-left: 40px
+  position:relative;
+
+
+}
+
+#presentation{
+color:#ff8190;
+margin-left: auto;
+margin-right: auto;
+position: absolute;
+display: block;
+font-size: 30px;
+padding-top: 90px;
+position:relative;
+
+}
+
+#reflections{
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 100%;
+position:relative;
+
+}
+
+
+footer{
+  background-color: #ff8190;
+}
+.hvrbox-text .hvrbox-layer-top {
+    background-color: red;
+    padding: 20px;
+    display: none;
+}

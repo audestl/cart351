@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<title>Cart351</title>
+
+<script>
+window.onload = function(){
+
+  // section A2
+document.getElementById("col1").addEventListener("mouseover", hideA2)
+document.getElementById("coll").addEventListener("mouseover", hideA2)
+document.getElementById("col1").addEventListener("mouseout", showA2)
+document.getElementById("coll").addEventListener("mouseout", showA2)
+document.getElementById("live_A2").addEventListener("mouseover", bigLiveA2)
+
+
+
+document.getElementById("live_A2").style.visibility="hidden";
+document.getElementById("github_A2").style.visibility="hidden";
+function hideA2(event)
+{
+  document.getElementById("a2").style.visibility="hidden";
+  document.getElementById("live_A2").style.visibility="visible";
+  document.getElementById("github_A2").style.visibility="visible";
+
+
+}
+
+function showA2(event)
+{
+  document.getElementById("a2").style.visibility="visible";
+  document.getElementById("live_A2").style.visibility="hidden";
+  document.getElementById("github_A2").style.visibility="hidden";
+}
+
+function bigLiveA2(event)
+{
+  document.getElementById("live_A2").style.font="110px";
+}
+// A3 section
+document.getElementById("col2").addEventListener("mouseover", hideA3)
+document.getElementById("coll2").addEventListener("mouseover", hideA3)
+document.getElementById("col2").addEventListener("mouseout", showA3)
+document.getElementById("coll2").addEventListener("mouseout", showA3)
+document.getElementById("live_A3").style.visibility="hidden";
+document.getElementById("github_A3").style.visibility="hidden";
+function hideA3(event)
+{
+  document.getElementById("a3").style.visibility="hidden";
+  document.getElementById("live_A3").style.visibility="visible";
+  document.getElementById("github_A3").style.visibility="visible";
+
+}
+
+
+
+function showA3(event)
+{
+  document.getElementById("a3").style.visibility="visible";
+  document.getElementById("live_A3").style.visibility="hidden";
+  document.getElementById("github_A3").style.visibility="hidden";
+}
+// col 3 section
+document.getElementById("colProp").addEventListener("mouseover", hideDemo)
+document.getElementById("colDemo").addEventListener("mouseover", hideDemo)
+document.getElementById("colProp").addEventListener("mouseout", showDemo)
+document.getElementById("colDemo").addEventListener("mouseout", showDemo)
+document.getElementById("demo").style.visibility="hidden";
+
+function hideDemo(event)
+{
+  document.getElementById("proposal").style.visibility="hidden";
+  document.getElementById("demo").style.visibility="visible";
+
+
+}
+
+function showDemo(event)
+{
+  document.getElementById("proposal").style.visibility="visible";
+  document.getElementById("demo").style.visibility="hidden";
+
+}
+// col 4 section
+document.getElementById("col4").addEventListener("mouseover", hideProto)
+document.getElementById("coll4").addEventListener("mouseover", hideProto)
+document.getElementById("col4").addEventListener("mouseout", showProto)
+document.getElementById("coll4").addEventListener("mouseout", showProto)
+document.getElementById("live_Proto").style.visibility="hidden";
+document.getElementById("github_Proto").style.visibility="hidden";
+function hideProto(event)
+{
+  document.getElementById("prototype").style.visibility="hidden";
+  document.getElementById("live_Proto").style.visibility="visible";
+  document.getElementById("github_Proto").style.visibility="visible";
+
+}
+
+
+
+function showProto(event)
+{
+  document.getElementById("prototype").style.visibility="visible";
+  document.getElementById("live_Proto").style.visibility="hidden";
+  document.getElementById("github_Proto").style.visibility="hidden";
+}
+
+//Column 5 section
+document.getElementById("col5").addEventListener("mouseover", hideFinal)
+document.getElementById("coll5").addEventListener("mouseover", hideFinal)
+document.getElementById("col5").addEventListener("mouseout", showFinal)
+document.getElementById("coll5").addEventListener("mouseout", showFinal)
+document.getElementById("live_Final").style.visibility="hidden";
+document.getElementById("github_Final").style.visibility="hidden";
+document.getElementById("docu_Final").style.visibility="hidden";
+
+
+function hideFinal(event)
+{
+  document.getElementById("final").style.visibility="hidden";
+  document.getElementById("live_Final").style.visibility="visible";
+  document.getElementById("github_Final").style.visibility="visible";
+  document.getElementById("docu_Final").style.visibility="visible";
+}
+
+function showFinal(event)
+{
+  document.getElementById("final").style.visibility="visible";
+  document.getElementById("live_Final").style.visibility="hidden";
+  document.getElementById("github_Final").style.visibility="hidden";
+  document.getElementById("docu_Final").style.visibility="hidden";
+}
+
+
+// Col 6 section
+document.getElementById("colPres").addEventListener("mouseover", hideSlides)
+document.getElementById("colSlid").addEventListener("mouseover", hideSlides)
+document.getElementById("colPres").addEventListener("mouseout", showSlides)
+document.getElementById("colSlid").addEventListener("mouseout", showSlides)
+document.getElementById("slides").style.visibility="hidden";
+
+function hideSlides(event)
+{
+  document.getElementById("presentation").style.visibility="hidden";
+  document.getElementById("slides").style.visibility="visible";
+
+
+}
+
+function showSlides(event)
+{
+  document.getElementById("presentation").style.visibility="visible";
+  document.getElementById("slides").style.visibility="hidden";
+
+}
+
+//Column 7
+document.getElementById("col7").addEventListener("mouseover", hideRef)
+document.getElementById("coll7").addEventListener("mouseover", hideRef)
+document.getElementById("col7").addEventListener("mouseout", showRef)
+document.getElementById("coll7").addEventListener("mouseout", showRef)
+document.getElementById("ref1").style.visibility="hidden";
+document.getElementById("ref2").style.visibility="hidden";
+document.getElementById("ref3").style.visibility="hidden";
+
+
+function hideRef(event)
+{
+  document.getElementById("reflections").style.visibility="hidden";
+  document.getElementById("ref1").style.visibility="visible";
+  document.getElementById("ref2").style.visibility="visible";
+  document.getElementById("ref3").style.visibility="visible";
+}
+
+function showRef(event)
+{
+  document.getElementById("reflections").style.visibility="visible";
+  document.getElementById("ref1").style.visibility="hidden";
+  document.getElementById("ref2").style.visibility="hidden";
+  document.getElementById("ref3").style.visibility="hidden";
+}
+
+}
+</script>
+
+
+</head>
+
+<body>
+
+<header>
+  <div id="cart">CART 351</div>
+  <div id="name">Audrey-Laure St-Louis</div>
+</header>
+
+
+<div class="row">
+
+  <div class="column_test" id="col1" style="background-color:#f2d400;">
+    <div id="a2" >A2</div>
+</div>
+
+<div class="column_test" id="coll" style="background-color:#f2d400;">
+  <div class="inner_row" id="live_A2"><a href="">Live</a></div>
+  <div class="inner_row" id="github_A2"><a href="">Github</a></div>
+
+</div>
+
+</div>
+
+
+  <div class="column_test" id="col2" style="background-color:#00aa83;">
+    <div id="a3">A3</div>
+  </div>
+
+
+  <div class="column_test" id="coll2" style="background-color:#00aa83;">
+    <div class="inner_row" id="live_A3"><a href="">Live</a></div>
+    <div class="inner_row" id="github_A3"><a href="">Github</a></div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col_test2" id="colProp" style="background-color:#ff8190;">
+    <div id="proposal">Proposal</div>
+
+  </div>
+  <div class="col_test3" id="colDemo" style="background-color:#ff8190;">
+    <div id="demo">Demo</div>
+  </div>
+
+    <div class="col_test" id="col4"style="background-color:#00aa83;">
+      <div class="inner_row" id="live_Proto"><a href="">Live</a></div>
+      <div class="inner_row" id="github_Proto"><a href="">Github</a></div>
+
+    </div>
+  <div class="col_test" id="coll4"style="background-color:#00aa83;">
+    <div id="prototype">Prototype</div>
+
+  </div>
+
+   <div class="col_test" id="col5" style="background-color:#ff8190;">
+    <div id="final">FINAL</div>
+
+  </div>
+
+  <div class="col_test" id="coll5" style="background-color:#ff8190;">
+    <div class="inner_row2" id="live_Final"><a href="">Live</a></div>
+    <div class="inner_row2" id="github_Final"><a href="">Github</a></div>
+      <div class="inner_row2" id="docu_Final"><a href="">Documentation</a></div>
+
+ </div>
+</div>
+
+
+<div class="row">
+  <div class="column_test"  id = "colPres" style="background-color:#00aa83; ">
+    <div id="presentation">Presentation</div>
+  </div>
+
+  <div class="column_test" id="colSlid" style="background-color:#00aa83;">
+    <div class="sli" id="slides"><a href="">Slides</a></div>
+</div>
+
+  <div class="column_test" id="col7" style="background-color:#f2d400;">
+    <img id="reflections" src="reflections_image.png"></div>
+  </div>
+
+
+    <div class="column_test" id="coll7" style="background-color:#f2d400;">
+      <div class="inner_row2" id="ref1"><a href="">Reflection 1</a></div>
+      <div class="inner_row2" id="ref2"><a href="">Reflection 2</a></div>
+      <div class="inner_row2" id="ref3"><a href="">Reflection 3</a></div>
+</div>
+</div>
+
+
+
+
+</body>
+
+
+</html>
