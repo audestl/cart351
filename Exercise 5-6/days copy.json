@@ -1,0 +1,37 @@
+{
+	"Label": "My sleeping habits",
+	"SubLabel": "by day",
+	"Days": [{
+			"Title": "Day 1",
+			"Wake_upTime": "Wake-Up time: 8:30 AM",
+			"Bedtime": "BedTime: 11:30 PM",
+			"Hours_of_sleep": "Hours of Sleep: 9 hours",
+			"Snooze": "Snooze? Yes, 3 times"
+
+		}, {
+			"Title": "Day 2",
+			"Wake_upTime": "Wake-Up time: 8:00 AM",
+			"Bedtime": "BedTime: 2:30 PM",
+			"Hours_of_sleep": "Hours of Sleep: 5.5 hours",
+			"Snooze": "Snooze? No"
+		},
+
+		{
+			"Title": "Day 3",
+			"Wake_upTime": "Wake-Up time: 10:30 AM",
+			"Bedtime": "BedTime: 11:00 PM",
+			"Hours_of_sleep": "Hours of Sleep: 11.5 hours",
+			"Snooze": "Snooze? No"
+		},
+
+		{
+			"Title": "Day 4",
+			"Wake_upTime": "Wake-Up time: 8:00 AM",
+			"Bedtime": "BedTime: 11:00 PM",
+			"Hours_of _sleep": "Hours of Sleep: 9 hours",
+			"Snooze": "Snooze? Yes, 5 times"
+
+		}
+
+	]
+}

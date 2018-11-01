@@ -1,0 +1,204 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Sleeping habits</title>
+
+  <script src = "jquery/jquery-3.3.1.min.js"></script>
+
+
+<script>
+
+
+
+$(document).ready(function() {
+
+  let header = $('header');
+  let section = $('section');
+  let loaded=false;
+  let searchItem;
+
+
+
+  $("#searchButton").click(getInput);
+  /**** function callback from button ***/
+  function getInput()
+  {
+     searchItem = $("#searchText").val();
+    console.log(searchItem);
+
+  }//function
+
+  $("#searchButton").click(function(event){
+    if(loaded ===false && searchItem>0 && searchItem<=4){
+         console.log("clicked");
+         $.getJSON('days.json',function(data)
+          {
+
+         console.log(data);
+
+         loaded=true;
+
+populateHeader(data);
+
+showDays(data);
+       })
+       //fail
+       .fail(function() {
+         console.log( "error" );
+       });
+       }
+
+       else{
+         console.log("data was loaded");
+
+
+
+       }
+   });
+
+
+   function errorMessage (data){
+     let sampleHeader2 = $("<h1>");
+     $(sampleHeader2).text(data.Label1);
+     $(sampleHeader2).appendTo(header);
+   }
+
+
+function populateHeader(data){
+      let sampleHeader = $("<h2>");
+      $(sampleHeader).text(data.Label);
+      $(sampleHeader).appendTo(header);
+
+
+      let samplePara = $("<p>");
+      console.log(data.SubLabel);
+      $(samplePara).text(data.SubLabel);
+      $(samplePara).appendTo(header);
+
+    }
+
+
+    function showDays(data){
+    // our array of each book objects
+    let days = data['Days'];
+
+  //  for (var i = 0; i < days.length; i++)
+      let userNum = (searchItem-1);
+      let i=userNum;
+      {
+      let sampleDaysArticle = $('<article>');
+      let sampleDayH2 = $('<h2>');
+      let samplePara1 = $("<p>");
+      let samplePara2 = $("<p>");
+      let samplePara3 = $("<p>");
+      let samplePara4 = $("<p>");
+
+
+
+      $(sampleDayH2).text(days[i].Title);
+      $(samplePara1).text(days[i].Wake_upTime);
+      $(samplePara2).text(days[i].Bedtime);
+      $(samplePara3).text(days[i].Hours_of_sleep);
+      $(samplePara4).text(days[i].Snooze);
+
+      $(sampleDayH2).appendTo(sampleDaysArticle );
+      $(samplePara1).appendTo(sampleDaysArticle );
+      $(samplePara2).appendTo(sampleDaysArticle );
+      $(samplePara3).appendTo(sampleDaysArticle );
+      $(samplePara4).appendTo(sampleDaysArticle );
+
+
+      $(section).append(sampleDaysArticle);
+    } //books
+  }//function
+
+
+
+});
+
+</script>
+</head>
+<body>
+
+<style>
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color:darkblue;
+  background-image: url(/../bg.png);
+}
+/* header styles */
+
+h1 {
+  text-align: center;
+  margin-top: 4%;
+  color: white;
+  font-size: 90px;
+
+}
+
+
+header  {
+  font-weight: bold;
+  text-align: center;
+  color: yellow;
+}
+section{
+  margin-left:25vw;
+}
+
+/* section styles */
+
+section article {
+  margin-left:0%;
+  margin-right:36%;
+  margin-bottom:20%;
+  background:yellow;
+  padding:4%;
+}
+
+section p {
+  font-size:1em;
+  font-weight: bold;
+}
+
+
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}
+h3{
+  color: white;
+}
+#searchButton{
+  background:orange;
+  width:100px;
+  margin:2%;
+}
+</style>
+
+
+
+
+    <header>
+      <h1>SLEEPING HABITS</h1>
+      <h3>Please enter a value between 1 and 4.</h3>
+      <input type="text" id="searchText" value="search Item" />
+      <input type="button" value="Submit" id="searchButton" />
+
+    </header>
+
+<div id="images"></div>
+
+    <section>
+
+    </section>
+
+</body>
+
+</html>
