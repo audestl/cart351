@@ -1,0 +1,71 @@
+/* Split the screen in half */
+body{
+  text-decoration: none;
+  background-color:#533D52;
+
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #EFC4AA;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #302745;
+
+}
+h1{
+  font-size: 90px;
+  font-family:monospace;
+  text-align: center;
+
+
+}
+h3{
+  font-size: 18px;
+  font-family:monospace;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  text-align: left;
+  color:#302745;
+}
+
+
+/* Style for inspiration choice page */
+.options{
+  text-align: center;
+  color:#302745;
+}
+.subtil{
+  font-family: monospace;
+
+}
+#goodDeedIdeas{
+  padding-top: 15px;
+  width: 70%;
+  text-align: right;
+  font-family: monospace;
+  font-size: 28px;
+}
+
+ #deed_text{
+  text-align: center;
+  background-color:#533D52;
+  font-family:monospace;
+  color: #E6A67F;
+
+}

@@ -1,0 +1,32 @@
+.formContainer{
+  background-color: #533D52;
+  color: #E6A67F;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 320px;
+
+}
+body{
+  background-color: #533D52;
+}
+.subtil{
+  color: #E6A67F;
+  text-decoration:none;
+  font-family: monospace;
+}
+
+input{
+
+  background: transparent;
+  border: 2px solid #E6A67F;
+  padding:5px 20px 5px  20px ;
+  color:#E6A67F;
+  font-family: monospace;
+}
+textarea{
+  color: #E6A67F;
+  background: transparent;
+  border: 2px solid #E6A67F;
+  padding-left: none;
+  border-left: none;
+}
